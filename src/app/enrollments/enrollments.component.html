@@ -1,0 +1,25 @@
+<div class="enrollments">
+    <h2>No of Today Enrollments:{{EnrollmentData.enrollmentCount}}</h2>
+    <h2>show Enrollments:{{ShowEnrollments}}</h2>
+<table>
+<tr>
+    <td>Sid</td>
+    <td>Sname</td>
+    <td>Email</td>
+    <td>Phone</td>
+    <td>Course</td>
+    <td>FeePaid</td>
+    <td>FeeBal</td>
+</tr>
+
+<tr *ngFor="let myenrollment of EnrollmentData.enrollmentsList">
+<td>{{myenrollment.sid}}</td>
+<td>{{myenrollment.sname}}</td>
+<td>{{myenrollment.email}}</td>
+<td>{{myenrollment.phone}}</td>
+<td>{{myenrollment.course}}</td>
+<td>{{myenrollment.feepaid}}</td>
+<td>{{myenrollment.feebal}}</td>
+</tr>
+</table>
+</div>
